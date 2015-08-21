@@ -27,7 +27,8 @@ public class GlownyPresenter extends Presenter<GlownyPresenter.MyView, GlownyPre
     	public Button getWyslij();
     	public TextBox getTexbox();
     	public Button getWyczysci();
-
+    	public Button getKatalogFryzurGuzik();
+    	public Button getZapiszGuzik();
     	
     }
     private EventBus eventBus;
@@ -83,4 +84,27 @@ public class GlownyPresenter extends Presenter<GlownyPresenter.MyView, GlownyPre
     	PlaceRequest request = new PlaceRequest.Builder().nameToken(NameTokens.odpowiedzi).build().with("name", getView().getTexbox().getText());
     	placeManager.revealPlace(request);
 	}
+    
+    @Override
+    protected void onReset() {
+    	super.onReset();
+    	getView().getKatalogFryzurGuzik().addClickHandler(new ClickHandler() {
+			
+			@Override
+			public void onClick(ClickEvent event) {
+			PlaceRequest request = new PlaceRequest(NameTokens.katalog);
+			placeManager.revealPlace(request);
+			}
+		});
+    	
+    	getView().getZapiszGuzik().addClickHandler(new ClickHandler() {
+			
+			@Override
+			public void onClick(ClickEvent event) {
+				PlaceRequest request = new PlaceRequest(NameTokens.zapisz);
+				placeManager.revealPlace(request);
+			}
+		});
+    	
+    }
 }

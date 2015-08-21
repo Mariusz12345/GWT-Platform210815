@@ -3,10 +3,14 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
              
              <g:HTMLPanel>
+             <g:Label text="Panel główny"/>
               <g:Button ui:field="wyczysci" text="Schowaj informacje"/>
              <g:Label text="Wyslij wiadomosci do serwera" />
              <g:TextBox ui:field="texbox"  />
              <g:Button ui:field="wyslij" text="przeslijDane" />
+             <br></br>
+             <g:Button ui:field="katalogFryzurGuzik" text="Do katalogu"/>
+             <g:Button ui:field="ZapiszGuzik" text="Zapisz się"/>
              </g:HTMLPanel>
     
 </ui:UiBinder>

@@ -18,14 +18,22 @@ class GlownyView extends ViewImpl implements GlownyPresenter.MyView {
     @UiField Button wyslij;
     
     @UiField TextBox texbox;
-    
-   
-    
-    @UiField Button wyczysci;
-    
+    @UiField Button katalogFryzurGuzik;
+
+
+	@UiField Button wyczysci;
+	@UiField Button ZapiszGuzik;
 	
+	
+	
+    public Button getZapiszGuzik() {
+		return ZapiszGuzik;
+	}
 
-
+	public Button getKatalogFryzurGuzik() {
+			return katalogFryzurGuzik;
+		}
+    
 	public Button getWyczysci() {
 		return wyczysci;
 	}
