@@ -3,6 +3,7 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
              
              <g:HTMLPanel>
+              <g:Button ui:field="wyczysci" text="Schowaj informacje"/>
              <g:Label text="Wyslij wiadomosci do serwera" />
              <g:TextBox ui:field="texbox"  />
              <g:Button ui:field="wyslij" text="przeslijDane" />

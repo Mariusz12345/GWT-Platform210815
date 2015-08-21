@@ -1,0 +1,13 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <g:HTMLPanel>
+    
+    <h1> Zakład fryzjerski Nowa Nadzieja Nestead Presenter</h1>
+     <g:Label ui:field="labelek" text="Godziny otwarcia zakładu od 8.00 do 20.00" />
+    <hr/>
+    <g:HTMLPanel ui:field="panel"/>
+    <hr/>
+    <h2> Stopka</h2>
+    </g:HTMLPanel>
+</ui:UiBinder>

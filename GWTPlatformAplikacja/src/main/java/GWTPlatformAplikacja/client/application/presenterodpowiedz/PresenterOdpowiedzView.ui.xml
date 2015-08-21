@@ -4,7 +4,7 @@
              <g:HTMLPanel>
              
              <g:HTML   ui:field="odpowiedzSerwera"   />
-             
+             <g:Button ui:field="powrot" text="Powrót" />
              </g:HTMLPanel>
     
 </ui:UiBinder>

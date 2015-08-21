@@ -20,6 +20,16 @@ class GlownyView extends ViewImpl implements GlownyPresenter.MyView {
     @UiField TextBox texbox;
     
    
+    
+    @UiField Button wyczysci;
+    
+	
+
+
+	public Button getWyczysci() {
+		return wyczysci;
+	}
+
 
 	public TextBox getTexbox() {
 		return texbox;
@@ -29,8 +39,7 @@ class GlownyView extends ViewImpl implements GlownyPresenter.MyView {
 	public Button getWyslij() {
 		return wyslij;
 	}
-
-
+	
 	@Inject
     GlownyView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
